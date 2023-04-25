@@ -5,9 +5,9 @@ Below is a workflow for how to use the scripts in this repository.
 ## Step 1: Generate molecular electron densities from a set of input coordinates.
 The only neccesary inputs are a atomic coordinates file and an auxiliary basis set file. You can find examples of both in `tests/test_data_generation`. Atomic coordinates must be supplied in [XYZ file format](https://en.wikipedia.org/wiki/XYZ_file_format).
 
-> Command: `python densityfit_q.py xyz_filename orbital_basis density_fit_basis`
+> Command: `python densityfit_q.py xyz_filename orbital_basis auxiliary_density_fit_basis DFT_method`
 > 
-> Example: `python densityfit_q.py water.xyz aug-cc-pvtz def2-universal-jfit-decontract`
+> Example: `python densityfit_q.py water.xyz aug-cc-pvtz def2-universal-jfit b3lyp`
 
 This command uses the `densityfit_q.py` script to run a quantum chemistry calculation with the `psi4` quantum chemistry program. Then it projects the electron density onto the density fitting basis. This will produce a psi4 output file (from which one can extract energy and forces) and density output file with the coefficients of the density fitting basis set.
 
