@@ -134,3 +134,9 @@ dmypy.json
 # psi4
 *timer.dat
 
+single_substituted
+tutorials
+generate_density_datasets
+dd/pretrained_checkpoint.pth
+dd/w10_energy_force.pkl
+dd/w53_energy_force.pkl

@@ -1,0 +1,6 @@
+[submodule "dd/equiformer_v2"]
+	path = dd/equiformer_v2
+	url = git@github.com:atomicarchitects/equiformer_v2.git
+[submodule "dd/ocp"]
+	path = dd/ocp
+	url = https://github.com/Open-Catalyst-Project/ocp
